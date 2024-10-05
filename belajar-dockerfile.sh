@@ -34,3 +34,6 @@ ENV APP_PORT=8080
 
 # to make a docker volume automatically
 VOLUME volume_name
+
+# to make default work directory
+WORKDIR /app
