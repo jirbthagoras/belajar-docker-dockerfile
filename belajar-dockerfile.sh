@@ -26,4 +26,9 @@ COPY text/*.txt hello;
 
 # If using add / copy, u can ignore certain files using .dockerignore
 
-# 
+# to add port metadata, wouldn't affect container's port
+EXPOSE 8080/tcp
+
+# to add an env file, can be used again in dockerfile using ${}
+ENV APP_PORT=8080
+
