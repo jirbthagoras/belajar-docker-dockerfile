@@ -17,3 +17,6 @@ CMD cat "hello/hello-world.txt"
 
 # to add metadata in image
 LABEL author="Jabriel Hans Talula"
+
+# to add a file from host or link
+ADD text/*.txt hello;
