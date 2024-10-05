@@ -40,3 +40,7 @@ WORKDIR /app
 
 # to log in as specific user in start
 USER username
+
+# shortly, used as a variable and can only be used in build state
+ARG key=value
+docker build -t jirbthagoras/arg arg --build-arg app=jirb
