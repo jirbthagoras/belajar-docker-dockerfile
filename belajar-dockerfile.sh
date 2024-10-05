@@ -18,5 +18,12 @@ CMD cat "hello/hello-world.txt"
 # to add metadata in image
 LABEL author="Jabriel Hans Talula"
 
-# to add a file from host or link
+# to add a file from host or link (auto extract)
 ADD text/*.txt hello;
+
+# To copy file from host (make sure to use this instruction regularly)
+COPY text/*.txt hello;
+
+# If using add / copy, u can ignore certain files using .dockerignore
+
+# 
