@@ -37,3 +37,6 @@ VOLUME volume_name
 
 # to make default work directory
 WORKDIR /app
+
+# to log in as specific user in start
+USER username
