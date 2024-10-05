@@ -32,3 +32,5 @@ EXPOSE 8080/tcp
 # to add an env file, can be used again in dockerfile using ${}
 ENV APP_PORT=8080
 
+# to make a docker volume automatically
+VOLUME volume_name
