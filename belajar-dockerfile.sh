@@ -47,3 +47,7 @@ docker build -t jirbthagoras/arg arg --build-arg app=jirb
 
 # To check container's health
 HEALTCHCHECK [ARGS] [CMDs]
+
+# To add prefix each command
+ENTRYPOINT ["go", "run"]
+CMD ["./app/main.go"]
